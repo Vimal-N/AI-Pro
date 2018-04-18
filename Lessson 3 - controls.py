@@ -115,4 +115,28 @@ for i in range(len(usernames)):
 
 print(usernames)
     #--to print the username List
-    
+
+#----------------------------------------------------------------
+# Quiz: Create an HTML List
+#----------------------------------------------------------------
+Write a for loop that iterates over a list of strings and creates a single string, html_str, which is an HTML list. For example, if the list is items = ['first string', 'second string'], printing html_str should output:
+
+<ul>
+<li>first string</li>
+<li>second string</li>
+</ul>
+That is, the string's first line should be the opening tag <ul>. Following that is one line per element in the source list, surrounded by <li> and </li> tags. The final line of the string should be the closing tag </ul>.
+
+items = ['first string', 'second string']
+lengthoflist =len(items)
+# write your for loop here
+for each in range(len(items)):
+    if each==0:
+        html_str = "<ul>"
+        html_str += "<li>"+items[each]+"</li>"
+    elif each==lengthoflist:
+         html_str +="</ul>"
+    else:
+        html_str +="<li>"+items[each]+"</li>"
+
+print(html_str)
