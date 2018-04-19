@@ -129,14 +129,20 @@ That is, the string's first line should be the opening tag <ul>. Following that 
 
 items = ['first string', 'second string']
 lengthoflist =len(items)
+html_str = "<ul>"
 # write your for loop here
 for each in range(len(items)):
-    if each==0:
-        html_str = "<ul>"
-        html_str += "<li>"+items[each]+"</li>"
-    elif each==lengthoflist:
-         html_str +="</ul>"
-    else:
-        html_str +="<li>"+items[each]+"</li>"
+    html_str += "\n<li>"+items[each]+"</li>"
+
+html_str +="\n</ul>"
+print(html_str)
+
+#####BETTER SOLUTION
+items = ['first string', 'second string']
+
+html_str = "<ul>\n"
+for item in items:
+    html_str += "<li>{}</li>\n".format(item)
+html_str += "</ul>"
 
 print(html_str)
