@@ -146,3 +146,17 @@ for item in items:
 html_str += "</ul>"
 
 print(html_str)
+
+
+#----------------------------------------------------------------
+# Quiz: While Loops---> Quiz: Nearest Square
+#----------------------------------------------------------------
+limit = 40
+nearest_square = 0
+i = 1
+# write your while loop here
+while (i*i) < limit:
+    nearest_square = i*i
+    i +=1
+
+print(nearest_square)
