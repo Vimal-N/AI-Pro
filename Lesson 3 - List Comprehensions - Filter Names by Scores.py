@@ -12,7 +12,7 @@ scores = {
 
 passed = [name for name,score in scores.items() if score>=65]
 
-# to get each key,value pair from 
+# to get each key,value pair from a dictionaries
 
 #for name,score in scores.items():
 #    if score >=65:
